@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/Knape/extract.js.git"
   },
-  "keywords": [],
+  "keywords": ["extract", "nested object", "Null-safe property access"],
   "author": "Philip Knape <philip.knape@gmail.com>",
   "license": "MIT",
   "bugs": {
