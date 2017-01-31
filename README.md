@@ -1,7 +1,10 @@
+[![Build Status](https://travis-ci.org/Knape/extract.js.svg?branch=master)](https://travis-ci.org/Knape/extract.js)
 
-## Extract.js
+# Extract.js
 
 Check or get nested properties on objects in javascript
+
+## Installation
 
 Install the package from [npm](https://npmjs.com/release)
 
