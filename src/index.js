@@ -20,4 +20,3 @@ const has = (obj, key = '') => {
 };
 
 export { get, has };
-export default { get, has };
