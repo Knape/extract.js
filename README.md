@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Knape/extract.js.svg?branch=master)](https://travis-ci.org/Knape/extract.js)
 [![Coverage Status](https://coveralls.io/repos/github/Knape/extract.js/badge.svg?branch=master)](https://coveralls.io/github/Knape/extract.js?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/Knape/extract.js/badge.svg?branch=master)](https://coveralls.io/github/Knape/extract.js?branch=master)
+[![Code Climate](https://lima.codeclimate.com/github/Knape/extract.js/badges/gpa.svg)](https://lima.codeclimate.com/github/Knape/extract.js)
 
 Check or get nested properties on objects in javascript
 
