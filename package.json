@@ -1,6 +1,6 @@
 {
   "name": "extract.js",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Check or get nested properties on objects in javascript",
   "main": "lib/index.js",
   "scripts": {
@@ -14,7 +14,11 @@
     "type": "git",
     "url": "git+https://github.com/Knape/extract.js.git"
   },
-  "keywords": ["extract", "nested object", "Null-safe property access"],
+  "keywords": [
+    "extract",
+    "nested object",
+    "Null-safe property access"
+  ],
   "author": "Philip Knape <philip.knape@gmail.com>",
   "license": "MIT",
   "bugs": {
