@@ -1,10 +1,13 @@
+[![Build Status](https://travis-ci.org/Knape/extract.js.svg?branch=master)](https://travis-ci.org/Knape/extract.js)
 
-## Extract.js
+# Extract.js
 
 [![Build Status](https://travis-ci.org/Knape/extract.js.svg?branch=master)](https://travis-ci.org/Knape/extract.js)
 [![Coverage Status](https://coveralls.io/repos/github/Knape/extract.js/badge.svg?branch=master)](https://coveralls.io/github/Knape/extract.js?branch=master)
 
 Check or get nested properties on objects in javascript
+
+## Installation
 
 Install the package from [npm](https://npmjs.com/release)
 

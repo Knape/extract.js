@@ -15,19 +15,25 @@ describe('Util functions', () => {
       .to.deep.equal({foobar: 'hello'});
     });
 
-    it('Should return undefined if we pass empty string to object', () => {
+    it('Should return null if we pass empty string to object', () => {
       expect(extract.get(object, ''))
-      .to.deep.equal(undefined);
+      .to.deep.equal(null);
     });
 
-    it('Should return undefined if we pass incorect extract string to object', () => {
+    it('Should return null if we pass incorect extract string to object', () => {
       expect(extract.get(object, 'yada'))
-      .to.deep.equal(undefined);
+      .to.deep.equal(null);
     });
 
-    it('Should return undefined if we pass nothing to object', () => {
+    it('Should return value instead of null if we pass incorect extract string to object and a default value', () => {
+      expect(extract.get(object, 'yada', 'foo'))
+      .to.deep.equal('foo');
+    });
+
+
+    it('Should return null if we pass nothing to object', () => {
       expect(extract.get(object))
-      .to.deep.equal(undefined);
+      .to.deep.equal(null);
     });
   });
 
