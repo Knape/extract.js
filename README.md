@@ -16,12 +16,13 @@ npm install --save extract.js
 
 ## Usage
 
-extract.js is a tiny util library for either extracting or checking properties on a nested object
+extract.js is a tiny util library for either extracting or checking properties on a nested object, both dot and bracket notation.
 
 ```js
 import extract from 'extract.js';
-const object = { foo: { bar: 'foobar' } }
+const object = { foo: { bar: 'foobar' }, bar: [{foo: 'foobar'}] }
 extract.get(object, 'foo.bar'); // => 'foobar'
+extract.get(object, 'bar[0].foo'); // => 'foobar'
 extract.get(object, 'foo.bar.foobar'); // => undefined
 extract.has(object, 'foo.bar'); // => true
 extract.has(object, 'foo.bar.foobar'); // => false

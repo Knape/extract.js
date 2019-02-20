@@ -2,6 +2,7 @@ const extract = require('../src/index');
 const expect = require('chai').expect;
 
 const object = { foo: { bar: { foobar: 'hello', } } };
+const objectArray = { foo: [{ bar: { foobar: 'hello', } }] };
 
 describe('Util functions', () => {
   describe('Extract nested properties from an object', () => {
@@ -35,6 +36,11 @@ describe('Util functions', () => {
       expect(extract.get(object))
       .to.deep.equal(null);
     });
+
+    it('Should return value if we pass object array', () => {
+      expect(extract.get(objectArray, 'foo[0].bar.foobar'))
+      .to.deep.equal('hello');
+    });
   });
 
   describe('check nested properties from an object', () => {
@@ -61,6 +67,11 @@ describe('Util functions', () => {
     it('Should return undefined if we pass nothing to object', () => {
       expect(extract.has(object))
       .to.be.false;
+    });
+
+    it('Should return value if we pass object array', () => {
+      expect(extract.has(objectArray, 'foo[0].bar.foobar'))
+      .to.be.true;
     });
   });
 });
